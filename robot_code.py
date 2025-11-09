@@ -7,8 +7,8 @@
 
 # # ====== CONFIG ======
 # URL = 0  # replace with stream URL string if needed
-# ESP_HOST = "192.168.1.50"  # <- put your ESP32 IP here
-# ESP_PORT = 7777
+# ESP_HOST = ""  # <- put your ESP32 IP here
+# ESP_PORT = 
 # SEND_HZ = 15
 # CONF_THR = 0.5
 # V_BACK = -0.25          # m/s-equivalent for your logic (sign only matters here)
@@ -107,7 +107,7 @@
 
 # import cv2, socket, json, time
 
-# ESP_IP = ("172.20.10.2", 7777)   # <- change to your ESP32 IP
+# ESP_IP = ("", )   # <- change to your ESP32 IP
 # URL = 1                         # 0 for webcam; or "http://<ip>:<port>/stream"
 
 # sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -157,8 +157,8 @@
 
 # # ========= CONFIG =========
 # SOURCE = 1               # 1 = second webcam; use 0 for default, or "http://.../stream" for URL
-# ESP_HOST = "172.20.10.2"  # <-- put your ESP32 IP here
-# ESP_PORT = 7777
+# ESP_HOST = ""  # <-- put your ESP32 IP here
+# ESP_PORT = 
 # SEND_HZ = 15
 # CONF_THR = 0.5
 # IMG_SIZE = 480
@@ -259,8 +259,8 @@
 
 # # ========= USER CONFIG =========
 # SOURCE = 1                     # webcam index 1
-# ESP_HOST = "172.20.10.2"      # <-- change to your ESP32 IP
-# ESP_PORT = 7777
+# ESP_HOST = ""      # <-- change to your ESP32 IP
+# ESP_PORT = 
 # SEND_HZ = 15
 
 # CONF_THR = 0.4                 # YOLO person confidence threshold
@@ -673,4 +673,5 @@ try:
 finally:
     send_stop()
     cap.release()
+
     cv2.destroyAllWindows()
